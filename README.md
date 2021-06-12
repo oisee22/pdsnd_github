@@ -11,11 +11,12 @@ Exploring bikeshare data using Python programming language.
 
 ### Files used
 bikeshare_project_final.py
-local csv type databases
+wrangled csv data files for 3 cities (local only) 
 
 ### Software
 Tested with Python v3.9.0
+Format: !(https://image.shutterstock.com/image-vector/vector-illustration-icon-python-programming-260nw-1405339748.jpg)
 
 ### Credits
-https://github.com/udacity/pdsnd_github
-Bikeshare data provided by https://www.motivateco.com/
+Project original from [Udacity](https://github.com/udacity/pdsnd_github)
+Bikeshare data provided by [Motivateco](https://www.motivateco.com/)
