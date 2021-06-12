@@ -153,7 +153,7 @@ def user_stats(city_data):
 def raw_data(city_data):
     """Displays raw filtered data on request from the user."""
     data = 0
-  
+ 
     while True:
         answer = input('Would you like to see 5 lines of raw data? Enter yes or no: ')
         if answer.lower() == 'yes':
@@ -172,9 +172,8 @@ def main():
         trip_duration_stats(city_data) #total travel time, average travel time)
         user_stats(city_data) # counts of each user type, counts of each gender (NY,CH) earliest, most recent, most common year of birth (NY;CH))
         raw_data(city_data) # lists raw filtered data for the user 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
         
-        if restart.lower() != 'yes':
+        if input('\nWould you like to restart? Enter yes or no.\n').lower() != 'yes':
            break
 
 
