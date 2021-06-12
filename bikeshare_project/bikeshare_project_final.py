@@ -2,6 +2,8 @@ import time
 import pandas as pd
 import numpy as np
 
+#This is a project done within the Udacity: Programming for Data Science with Python Nanodegree Program
+
 CITY_DATA = { 'chicago': './chicago.csv',
               'new york city': './new_york_city.csv',
               'washington': './washington.csv' }
@@ -60,11 +62,8 @@ def load_data(city, month, day):
    
     if month != 'all' :
         city_data = city_data[city_data['month'] == month.title()] 
-        #city_data['month']=city_data[city_data['Start Time'].dt.month_name() == month.title()] alternative, we just wrote everything in one
     if day != 'all' :
         city_data = city_data[city_data['day_of_week'] == day.title()] 
-        #here we could do the same as above all in one
-    #print(city_data) check filtered db we work with in the stats
     return city_data
 
 
