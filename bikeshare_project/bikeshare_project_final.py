@@ -152,20 +152,15 @@ def user_stats(city_data):
 
 def raw_data(city_data):
     """Displays raw filtered data on request from the user."""
-    x=len(city_data.index)-32
-    y=len(city_data.index)-27
-    i=len(city_data.index)
-    answer=input('\nWould you like to see 5 lines of raw data) yes/no   ').lower()
-    while answer == 'yes':
-        print(city_data.iloc[x:y])
-        answer=input('\nWould you like to see more data? yes/no   ').lower()  
-        x=x+5
-        y=y+5
-        if y>=i:
-            print('\nThere is no more data to display!')
+    data = 0
+  
+    while True:
+        answer = input('Would you like to see 5 lines of raw data? Enter yes or no: ')
+        if answer.lower() == 'yes':
+            print(city_data[data : data+5])
+            data += 5
+        else:
             break
-            
-        
 
 def main():
     while True:
