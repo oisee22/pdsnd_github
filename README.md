@@ -7,11 +7,15 @@ Created on 12 Jun 2021 11:50:55
 bikeshare_project
 
 ### Description
-exploring bikeshare data using python
+Exploring bikeshare data using Python programming language.
 
 ### Files used
 bikeshare_project_final.py
 local csv type databases
 
+### Software
+Tested with Python v3.9.0
+
 ### Credits
 https://github.com/udacity/pdsnd_github
+Bikeshare data provided by https://www.motivateco.com/
